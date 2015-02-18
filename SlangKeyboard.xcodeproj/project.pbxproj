@@ -14,6 +14,9 @@
 		A50BC3351A94CE20003A6EC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50BC3341A94CE20003A6EC1 /* Images.xcassets */; };
 		A50BC3381A94CE20003A6EC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50BC3361A94CE20003A6EC1 /* LaunchScreen.xib */; };
 		A50BC3441A94CE20003A6EC1 /* SlangKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A50BC3431A94CE20003A6EC1 /* SlangKeyboardTests.m */; };
+		A50BC3571A94CEAD003A6EC1 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50BC3561A94CEAD003A6EC1 /* KeyboardViewController.m */; };
+		A50BC35A1A94CEAD003A6EC1 /* SlangKeyboardTarget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A50BC3511A94CEAD003A6EC1 /* SlangKeyboardTarget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A50BC3601A94CF42003A6EC1 /* SlangKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50BC35F1A94CF42003A6EC1 /* SlangKeyboardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +27,28 @@
 			remoteGlobalIDString = A50BC3231A94CE20003A6EC1;
 			remoteInfo = SlangKeyboard;
 		};
+		A50BC3581A94CEAD003A6EC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A50BC31C1A94CE20003A6EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50BC3501A94CEAD003A6EC1;
+			remoteInfo = SlangKeyboardTarget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A50BC35E1A94CEAD003A6EC1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A50BC35A1A94CEAD003A6EC1 /* SlangKeyboardTarget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A50BC3241A94CE20003A6EC1 /* SlangKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlangKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +64,11 @@
 		A50BC33D1A94CE20003A6EC1 /* SlangKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlangKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50BC3421A94CE20003A6EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50BC3431A94CE20003A6EC1 /* SlangKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlangKeyboardTests.m; sourceTree = "<group>"; };
+		A50BC3511A94CEAD003A6EC1 /* SlangKeyboardTarget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SlangKeyboardTarget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50BC3541A94CEAD003A6EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50BC3551A94CEAD003A6EC1 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		A50BC3561A94CEAD003A6EC1 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		A50BC35F1A94CF42003A6EC1 /* SlangKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlangKeyboardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +86,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A50BC34E1A94CEAD003A6EC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +101,7 @@
 			children = (
 				A50BC3261A94CE20003A6EC1 /* SlangKeyboard */,
 				A50BC3401A94CE20003A6EC1 /* SlangKeyboardTests */,
+				A50BC3521A94CEAD003A6EC1 /* SlangKeyboardTarget */,
 				A50BC3251A94CE20003A6EC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +111,7 @@
 			children = (
 				A50BC3241A94CE20003A6EC1 /* SlangKeyboard.app */,
 				A50BC33D1A94CE20003A6EC1 /* SlangKeyboardTests.xctest */,
+				A50BC3511A94CEAD003A6EC1 /* SlangKeyboardTarget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +157,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A50BC3521A94CEAD003A6EC1 /* SlangKeyboardTarget */ = {
+			isa = PBXGroup;
+			children = (
+				A50BC3551A94CEAD003A6EC1 /* KeyboardViewController.h */,
+				A50BC3561A94CEAD003A6EC1 /* KeyboardViewController.m */,
+				A50BC35F1A94CF42003A6EC1 /* SlangKeyboardView.xib */,
+				A50BC3531A94CEAD003A6EC1 /* Supporting Files */,
+			);
+			path = SlangKeyboardTarget;
+			sourceTree = "<group>";
+		};
+		A50BC3531A94CEAD003A6EC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A50BC3541A94CEAD003A6EC1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +186,12 @@
 				A50BC3201A94CE20003A6EC1 /* Sources */,
 				A50BC3211A94CE20003A6EC1 /* Frameworks */,
 				A50BC3221A94CE20003A6EC1 /* Resources */,
+				A50BC35E1A94CEAD003A6EC1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A50BC3591A94CEAD003A6EC1 /* PBXTargetDependency */,
 			);
 			name = SlangKeyboard;
 			productName = SlangKeyboard;
@@ -157,6 +216,23 @@
 			productReference = A50BC33D1A94CE20003A6EC1 /* SlangKeyboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A50BC3501A94CEAD003A6EC1 /* SlangKeyboardTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50BC35B1A94CEAD003A6EC1 /* Build configuration list for PBXNativeTarget "SlangKeyboardTarget" */;
+			buildPhases = (
+				A50BC34D1A94CEAD003A6EC1 /* Sources */,
+				A50BC34E1A94CEAD003A6EC1 /* Frameworks */,
+				A50BC34F1A94CEAD003A6EC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlangKeyboardTarget;
+			productName = SlangKeyboardTarget;
+			productReference = A50BC3511A94CEAD003A6EC1 /* SlangKeyboardTarget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +248,9 @@
 					A50BC33C1A94CE20003A6EC1 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = A50BC3231A94CE20003A6EC1;
+					};
+					A50BC3501A94CEAD003A6EC1 = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
@@ -190,6 +269,7 @@
 			targets = (
 				A50BC3231A94CE20003A6EC1 /* SlangKeyboard */,
 				A50BC33C1A94CE20003A6EC1 /* SlangKeyboardTests */,
+				A50BC3501A94CEAD003A6EC1 /* SlangKeyboardTarget */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +289,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50BC34F1A94CEAD003A6EC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50BC3601A94CF42003A6EC1 /* SlangKeyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +321,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A50BC34D1A94CEAD003A6EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50BC3571A94CEAD003A6EC1 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +336,11 @@
 			isa = PBXTargetDependency;
 			target = A50BC3231A94CE20003A6EC1 /* SlangKeyboard */;
 			targetProxy = A50BC33E1A94CE20003A6EC1 /* PBXContainerItemProxy */;
+		};
+		A50BC3591A94CEAD003A6EC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50BC3501A94CEAD003A6EC1 /* SlangKeyboardTarget */;
+			targetProxy = A50BC3581A94CEAD003A6EC1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,6 +496,30 @@
 			};
 			name = Release;
 		};
+		A50BC35C1A94CEAD003A6EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SlangKeyboardTarget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A50BC35D1A94CEAD003A6EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SlangKeyboardTarget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -420,6 +545,14 @@
 			buildConfigurations = (
 				A50BC34B1A94CE20003A6EC1 /* Debug */,
 				A50BC34C1A94CE20003A6EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A50BC35B1A94CEAD003A6EC1 /* Build configuration list for PBXNativeTarget "SlangKeyboardTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50BC35C1A94CEAD003A6EC1 /* Debug */,
+				A50BC35D1A94CEAD003A6EC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
